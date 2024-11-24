@@ -3,18 +3,28 @@ import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
+  <div :class="$style['wrapper']">
+    <header :class="$style['header']">
       <nav>
         <RouterLink to="/">Home</RouterLink>
       </nav>
-    </div>
-  </header>
+    </header>
 
-  <RouterView />
+    <RouterView />
+  </div>
 </template>
 
 <style lang="scss" module>
-@use './assets/base.scss';
-
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+.header {
+  align-self: flex-start;
+  position: fixed;
+  top: 10px;
+}
 </style>

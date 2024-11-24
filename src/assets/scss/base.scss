@@ -1,7 +1,7 @@
-@use './variables.scss' as *;
+@use './_variables.scss' as *;
 @use './mixins.scss';
 @use './node_modules/normalize-scss/sass/normalize';
-
+@forward './_variables.scss';
 // ===
 // Base Styles
 // ===

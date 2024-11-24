@@ -1,9 +1,13 @@
 <script setup lang="ts">
+import { onMounted } from 'vue'
 
+onMounted(() => {
+  console.debug('Loaded Home')
+})
 </script>
 <template>
   <div>
-    <h1>Welcome to the Library</h1>
+    <h1>My Library</h1>
     <p>Here's some primary text</p>
     <h3>To Do:</h3>
     <ul>
@@ -26,9 +30,7 @@
       <li>Google Icons</li>
       <li>Unit Testing (Husky Hooks)</li>
     </ul>
-    <h3>
-      Color Scheme Hex Codes
-    </h3>
+    <h3>Color Scheme Hex Codes</h3>
     <ul>
       <li>#383931</li>
       <li>#a0552b</li>
@@ -36,5 +38,16 @@
       <li>#907e68</li>
       <li>#ccbcad</li>
     </ul>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam quibusdam consequatur amet
+      voluptates sunt? Totam possimus enim amet, eaque laborum reprehenderit earum quod ex
+      dignissimos, libero nulla quasi autem. Facere.
+    </p>
   </div>
 </template>
+<style lang="scss" module>
+ul {
+  background-color: $taupe;
+  font-weight: $font-weight-bold;
+}
+</style>
