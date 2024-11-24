@@ -31,7 +31,7 @@ a {
   cursor: pointer;
   background: transparent;
   font-weight: $font-weight-semi-bold;
-  color: $light-purple;
+  color: $light-beige;
   text-decoration: none;
 
   &:hover {
@@ -48,9 +48,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: $dark-purple;
-  color: $white;
-  border: 1px solid $light-purple;
+  background: $copper-brown;
+  color: $light-beige;
+  border: 1px solid $taupe;
   border-radius: $border-radius-light;
   text-decoration: none;
   text-transform: none;
@@ -60,8 +60,8 @@ button {
   margin: 4px 2px;
   padding: 10px;
   &:hover {
-    background: $light-purple;
-    color: $darkest-purple;
+    background: $taupe;
+    color: $charcoal-green;
     font-weight: $font-weight-semi-bold;
   }
   &::-moz-focus-inner {
@@ -69,7 +69,7 @@ button {
     padding: 0;
   }
   &:-moz-focusring {
-    outline: 2px solid $light-purple;
+    outline: 2px solid $light-beige;
   }
 }
 
@@ -108,37 +108,16 @@ select {
 :global {
   @include mixins.context-text();
   .router-link-exact-active {
-    --rl-active-background-color: #{$purple};
+    --rl-active-background-color: #{$light-beige};
     --rl-active-font-color: #{$secondary-font-color};
     --rl-active-font-style: italic;
     background: var(--rl-active-background-color);
     color: var(--rl-active-font-color);
     font-style: var(--rl-active-font-style);
   }
-
-  .badge {
-    height: 26px;
-    width: auto;
-    padding: 0 7px;
-    margin: 0 5px;
-    background: transparent;
-    border-radius: 13px;
-    font-size: 1rem;
-    font-weight: $font-weight-bolder;
-    line-height: 1.625rem;
-    &.-fill-gradient {
-      background: $purple-gradient;
-      color: $white;
-      &.-light {
-        background: $gray-gradient;
-        color: $dark-purple;
-        font-weight: $font-weight-bolder;
-      }
-    }
-  }
   .error-detail {
     font-size: $font-size-small;
-    color: lighten($error-font-color, 25%);
+    color: adjust($error-font-color, $lightness);
     font-style: italic;
     font-weight: $font-weight-medium;
   }

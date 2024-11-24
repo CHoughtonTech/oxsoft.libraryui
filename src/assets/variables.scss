@@ -1,38 +1,31 @@
 // ===
 // Colors
 // ===
-$scheme1: #383931;
-$scheme2: #a0552b;
-$scheme3: #646756;
-$scheme4: #907e68;
-$scheme5: #ccbcad;
-$black: #000;
-$dark-gray: #2d3033;
-$gray: #808080;
-$light-gray: #b9b9b9;
-$white: #f5f5f5;
-$dark-blue: #2c3e50;
-$deep-blue: #0e3fdf;
-$dark-green: #228b22;
-$dark-purple: #411159;
-$darkest-purple: #291e29;
-$purple: #8834b3;
-$light-purple: #c15ef2;
-$orange: #ffa500;
-$light-red: #f08080;
+$charcoal-green: #383931;
+$copper-brown: #a0552b;
+$olive-green: #646756;
+$taupe: #907e68;
+$light-beige: #ccbcad;
+// $black: #000;
+// $dark-gray: #2d3033;
+// $gray: #808080;
+// $light-gray: #b9b9b9;
+// $white: #f5f5f5;
+// $dark-blue: #2c3e50;
+// $deep-blue: #0e3fdf;
+// $dark-green: #228b22;
+// $dark-purple: #411159;
+// $darkest-purple: #291e29;
+// $purple: #8834b3;
+// $light-purple: #c15ef2;
+// $orange: #ffa500;
+// $light-red: #f08080;
 
 // Notifications
 $red: #f14668;
 $yellow: #ffe08a;
 $blue: #3e8ed0;
 $green: #48c78e;
-
-// ===
-// Gradients
-// ===
-
-$purple-gradient: linear-gradient(to right, $purple, $light-purple);
-$gray-gradient: linear-gradient(to right, $dark-gray, $white);
 
 // ===
 // Shadows
@@ -43,23 +36,28 @@ $default-shadow:
   0 1px 5px 0 rgba(0, 0, 0, 0.13);
 
 // ===
+// Lightness to enhace how light/dark a color is
+// ===
+$lightness: 25%;
+$darkness: -25%;
+
+// ===
 // Background
 // ===
-
-$primary-bg-color: $scheme4;
-$secondary-bg-color: $gray;
+$primary-bg-color: $charcoal-green;
+$secondary-bg-color: $taupe;
 $error-bg-color: $red;
 $warning-bg-color: $yellow;
 $info-bg-color: $blue;
 $success-bg-color: $green;
-$error-bg-color-dark: darken($error-bg-color, 25%);
-$warning-bg-color-dark: darken($warning-bg-color, 25%);
-$info-bg-color-dark: darken($info-bg-color, 25%);
-$success-bg-color-dark: darken($success-bg-color, 25%);
-$error-bg-color-light: lighten($error-bg-color, 25%);
-$warning-bg-color-light: lighten($warning-bg-color, 25%);
-$info-bg-color-light: lighten($info-bg-color, 25%);
-$success-bg-color-light: lighten($success-bg-color, 25%);
+$error-bg-color-dark: adjust($error-bg-color, $darkness);
+$warning-bg-color-dark: adjust($warning-bg-color, $darkness);
+$info-bg-color-dark: adjust($info-bg-color, $darkness);
+$success-bg-color-dark: adjust($success-bg-color, $darkness);
+$error-bg-color-light: adjust($error-bg-color, $lightness);
+$warning-bg-color-light: adjust($warning-bg-color, $lightness);
+$info-bg-color-light: adjust($info-bg-color, $lightness);
+$success-bg-color-light: adjust($success-bg-color, $lightness);
 // Default
 $default-bg-color: $primary-bg-color;
 
@@ -68,14 +66,14 @@ $default-bg-color: $primary-bg-color;
 // ===
 
 // Colors
-$primary-font-color: $white;
-$secondary-font-color: $light-gray;
-$error-font-color: darken($red, 25%);
-$warning-font-color: darken($yellow, 25%);
-$info-font-color: darken($blue, 25%);
-$success-font-color: darken($green, 25%);
+$primary-font-color: $charcoal-green;
+$secondary-font-color: $copper-brown;
+$error-font-color: adjust($red, $darkness);
+$warning-font-color: adjust($yellow, $darkness);
+$info-font-color: adjust($blue, $darkness);
+$success-font-color: adjust($green, $darkness);
 // Default
-$default-font-color: $white;
+$default-font-color: $light-beige;
 
 // Style
 $primary-font-family: 'Open Sans', sans-serif;
@@ -119,7 +117,7 @@ $default-font-size: $font-size-medium;
 // Heading
 // ===
 
-$heading-font-color: $light-purple;
+$heading-font-color: $olive-green;
 $heading-letter-spacing: -2%;
 
 $h1-font-size: 50px;
