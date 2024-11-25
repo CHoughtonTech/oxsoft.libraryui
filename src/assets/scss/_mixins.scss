@@ -1,4 +1,5 @@
 @use './variables.scss' as *;
+@use 'sass:list';
 
 @mixin generate-headings($from: 1, $to: 6, $mobile: false) {
   $font-vars: $h1-font-full, $h2-font-full, $h3-font-full, $h4-font-full, $h5-font-full,
@@ -9,7 +10,7 @@
       align-items: center;
       letter-spacing: $heading-letter-spacing;
       color: $heading-font-color;
-      font: nth($font-vars, $j);
+      font: list.nth($font-vars, $j);
     }
   }
 }
