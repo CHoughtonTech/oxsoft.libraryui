@@ -16,6 +16,8 @@ html {
   color: $default-font-color;
   font-size: $default-font-size;
   font-family: $default-font-family;
+  font-optical-sizing: auto;
+  // font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -107,14 +109,14 @@ select {
 
 :global {
   @include mixins.context-text();
-  .router-link-exact-active {
-    --rl-active-background-color: #{$light-beige};
-    --rl-active-font-color: #{$secondary-font-color};
-    --rl-active-font-style: italic;
-    background: var(--rl-active-background-color);
-    color: var(--rl-active-font-color);
-    font-style: var(--rl-active-font-style);
-  }
+  // .router-link-exact-active {
+  //   --rl-active-background-color: #{$light-beige};
+  //   --rl-active-font-color: #{$secondary-font-color};
+  //   --rl-active-font-style: italic;
+  //   background: var(--rl-active-background-color);
+  //   color: var(--rl-active-font-color);
+  //   font-style: var(--rl-active-font-style);
+  // }
   .error-detail {
     font-size: $font-size-small;
     color: adjust($error-font-color, $lightness);
@@ -125,5 +127,13 @@ select {
     border: 2px solid $error-bg-color;
     background: $error-bg-color-light;
     color: $error-font-color;
+  }
+  .material-symbols-outlined {
+    font-size: 48px;
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24;
   }
 }

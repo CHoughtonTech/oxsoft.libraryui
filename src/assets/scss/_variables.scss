@@ -45,7 +45,7 @@ $darkness: -25%;
 // Background
 // ===
 $primary-bg-color: $charcoal-green;
-$secondary-bg-color: $taupe;
+$secondary-bg-color: $olive-green;
 $error-bg-color: $red;
 $warning-bg-color: $yellow;
 $info-bg-color: $blue;
@@ -76,8 +76,7 @@ $success-font-color: adjust($green, $darkness);
 $default-font-color: $light-beige;
 
 // Style
-$primary-font-family: 'Open Sans', sans-serif;
-$secondary-font-family: 'Montserrat', sans-serif;
+$primary-font-family: 'Quicksand', sans-serif;
 // Default
 $default-font-family: $primary-font-family;
 
@@ -117,48 +116,48 @@ $default-font-size: $font-size-medium;
 // Heading
 // ===
 
-$heading-font-color: $olive-green;
+$heading-font-color: $taupe;
 $heading-letter-spacing: -2%;
 
 $h1-font-size: 50px;
 $h1-line-height: 73px;
 $h1-font-family:
-  #{$h1-font-size}/#{$h1-line-height} $secondary-font-family,
+  #{$h1-font-size}/#{$h1-line-height} $primary-font-family,
   $primary-font-family;
 $h1-font-full: $font-weight-bold $h1-font-family;
 
 $h2-font-size: 38px;
 $h2-line-height: 46px;
 $h2-font-family:
-  #{$h2-font-size}/#{$h2-line-height} $secondary-font-family,
+  #{$h2-font-size}/#{$h2-line-height} $primary-font-family,
   $primary-font-family;
 $h2-font-full: $font-weight-bold $h2-font-family;
 
 $h3-font-size: 28px;
 $h3-line-height: 34px;
 $h3-font-family:
-  #{$h3-font-size}/#{$h3-line-height} $secondary-font-family,
+  #{$h3-font-size}/#{$h3-line-height} $primary-font-family,
   $primary-font-family;
 $h3-font-full: $font-weight-bold $h3-font-family;
 
 $h4-font-size: 21px;
 $h4-line-height: 26px;
 $h4-font-family:
-  #{$h4-font-size}/#{$h4-line-height} $secondary-font-family,
+  #{$h4-font-size}/#{$h4-line-height} $primary-font-family,
   $primary-font-family;
 $h4-font-full: $font-weight-bold $h4-font-family;
 
 $h5-font-size: 16px;
 $h5-line-height: 20px;
 $h5-font-family:
-  #{$h5-font-size}/#{$h5-line-height} $secondary-font-family,
+  #{$h5-font-size}/#{$h5-line-height} $primary-font-family,
   $primary-font-family;
 $h5-font-full: $font-weight-bold $h5-font-family;
 
 $h6-font-size: 15px;
 $h6-line-height: 16px;
 $h6-font-family:
-  #{$h6-font-size}/#{$h6-line-height} $secondary-font-family,
+  #{$h6-font-size}/#{$h6-line-height} $primary-font-family,
   $primary-font-family;
 $h6-font-full: $font-weight-bold $h6-font-family;
 
