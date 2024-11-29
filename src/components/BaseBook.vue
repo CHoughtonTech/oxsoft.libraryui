@@ -1,9 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BookEntry from '@/components/BookEntry.vue';
+</script>
 <template>
   <div :class="$style['main-content']">
     <span class="material-symbols-outlined">arrow_left</span>
     <span class="material-symbols-outlined"> book </span>
     <span class="material-symbols-outlined">arrow_right</span>
+    <BookEntry />
   </div>
 </template>
 <style lang="scss" module>
